@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    background-color: #242333;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.seat{
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.row{
+    display: flex;
+}
+
+.container{
+    margin: 20px 0;
+}
+
+.container select{
+    border-radius: 5px;
+    font-size: 14px;
+    border: 0;
+    padding: 5px 15px;
+    margin: 5px;
+    
+}
+.container p{
+    font-size: 18px;    
+}
+
+.seat.selected{
+    background-color: #6feaf6;
+}
+
+.seat.occupied{
+    background-color: white;
+}
+
+.seat:nth-of-type(2){
+    margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2){
+    margin-left: 18px;
+}
+
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    scale: 1.2;
+}
+
+.legend .seat:not(.seat.occupied):hover{
+    cursor: default;
+    scale: 1;
+}
+
+.legend ul{
+    background-color: rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.legend li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.legend span{
+    margin: 0 10px;
+}
+
+.screen{
+    background: #fff;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+}
+
+.movie-hall{
+    perspective: 1000px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.text span{
+    color: #6feaf6
+}
